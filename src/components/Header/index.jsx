@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <div className={navbar}>
             <ul className='pages-block mx-auto'>
-                <li><NavLink to='/'>Home</NavLink></li>
+                <li><NavLink to='/home'>Home</NavLink></li>
                 <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
                 <li><NavLink to='/about'>About</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>

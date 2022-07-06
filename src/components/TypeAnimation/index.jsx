@@ -1,7 +1,7 @@
 import TypeAnimation from "react-type-animation";
 import './style.scss';
 
-export default function TypeAnimationComp({time,text}) {
+export default function TypeAnimationComp({ time, text }) {
     return (
         <div className="type-animation">
             <TypeAnimation

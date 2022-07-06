@@ -34,10 +34,7 @@ export default function Home() {
                     <TypeAnimation time={time} text={text} />
                 </div>
             </div>
-            <h1>Home PageHome PageHome PageHome PageHome PageHome PageHome Page</h1>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
+
 
         </div>
     )

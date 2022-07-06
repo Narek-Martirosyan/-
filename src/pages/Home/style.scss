@@ -1,5 +1,5 @@
 .home-page {
-    
+
     .typing-text-block {
         display: flex;
 
@@ -11,6 +11,7 @@
 
         .typing-text {
             margin-left: 50px;
+
             .name-field {
                 display: none;
                 background-color: transparent;
@@ -20,8 +21,38 @@
                 color: #138C0E;
                 cursor: none;
             }
+
             .show-name-field {
                 display: block;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .home-page {
+        .typing-text-block {
+            .my-image {
+                width: 150px;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home-page {
+        .typing-text-block {
+            .my-image {
+                width: 100px;
+                height: fit-content;
+            }
+
+            .typing-text {
+                .name-field {
+                    width: 100px;
+                }
             }
         }
     }

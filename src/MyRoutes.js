@@ -10,7 +10,7 @@ export default function MyRoutes() {
         <>
             <Routes>
                 <Route path='/' element={<Main />}>
-                    <Route path='/' element={<Home />} />
+                    <Route path='/home' element={<Home />} />
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/contact' element={<Contact />} />
