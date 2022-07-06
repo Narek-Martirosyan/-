@@ -1,0 +1,28 @@
+.home-page {
+    
+    .typing-text-block {
+        display: flex;
+
+        .my-image {
+            width: 250px;
+            box-shadow: 12px 12px 10px blue;
+            border-radius: 20px;
+        }
+
+        .typing-text {
+            margin-left: 50px;
+            .name-field {
+                display: none;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #138C0E;
+                color: #138C0E;
+                cursor: none;
+            }
+            .show-name-field {
+                display: block;
+            }
+        }
+    }
+}
