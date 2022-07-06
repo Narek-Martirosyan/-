@@ -43,4 +43,42 @@
             }
         }
     }
+
+    .mobile-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .my-navbar {
+        .mobile-bar {
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: aliceblue;
+                    font-weight: 600;
+                    margin: 0 10px;
+                    cursor: none;
+
+                    &:hover {
+                        color: rgb(66, 66, 66);
+                    }
+
+                    &:active {
+                        color: blue;
+                    }
+                }
+            }
+        }
+
+        .pages-block {
+            display: none;
+        }
+    }
 }

@@ -25,7 +25,7 @@ export default function Home() {
                 <div className="typing-text">
                     <TypeAnimation time={2000} text={'Hello'} />
                     <TypeAnimation time={4000} text={'My name is Narek'} />
-                    <TypeAnimation time={6000} text={'I am junior web developer'} />
+                    <TypeAnimation time={6000} text={'I am a junior web developer'} />
                     <TypeAnimation time={9000} text={'And this is my first website'} />
                     <TypeAnimation time={12000} text={'What is your name?'} />
                     <form action="" onSubmit={(e) => submitName(e, e.target[0].value)}>
