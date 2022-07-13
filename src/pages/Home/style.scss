@@ -13,9 +13,25 @@
                 height: fit-content;
             }
 
+            //for iOS
+            @supports (-webkit-touch-callout: none) {
+                @media screen and (max-width: 768px) {
+                    width: 150px;
+                    height: fit-content;
+                }
+            }
+
             @media screen and (max-width: 425px) {
                 width: 100px;
                 height: fit-content;
+            }
+
+            //for iOS
+            @supports (-webkit-touch-callout: none) {
+                @media screen and (max-width: 425px) {
+                    width: 100px;
+                    height: fit-content;
+                }
             }
         }
 
@@ -33,6 +49,13 @@
 
                 @media screen and (max-width: 425px) {
                     width: 100px;
+                }
+                
+                //for iOS
+                @supports (-webkit-touch-callout: none) {
+                    @media screen and (max-width: 425px) {
+                        width: 100px;
+                    }
                 }
             }
 
