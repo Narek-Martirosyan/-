@@ -1,7 +1,7 @@
 import TypeAnimation from "react-type-animation";
 import './style.scss';
 
-export default function TypeAnimationComp({ time, text }) {
+export default function TypeAnimationComp({ time, text, tag }) {
     return (
         <div className="type-animation">
             <TypeAnimation
@@ -10,7 +10,7 @@ export default function TypeAnimationComp({ time, text }) {
                     time,
                     text
                 ]}
-                wrapper="h2"
+                wrapper={tag}
                 repeat={1}
             />
         </div>

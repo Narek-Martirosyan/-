@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import TicTacToe from './pages/Portfolio/TicTacToe';
 
 export default function MyRoutes() {
     return (
@@ -14,6 +15,7 @@ export default function MyRoutes() {
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/contact' element={<Contact />} />
+                    <Route path='/portfolio/tictactoe' element={<TicTacToe />}/>
                 </Route>
             </Routes>
         </>

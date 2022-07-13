@@ -14,7 +14,7 @@ function App() {
         dimensions={50}
         fill='#FFF'
         smoothness={{
-          movement: 0.2,
+          movement: 1,
           scale: 0.1,
           opacity: 0.2,
         }}

@@ -1,0 +1,25 @@
+.tic-tac-toe {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto 40px auto;
+    color: blue;
+    text-shadow: 0 0 30px;
+
+    .one-item {
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 0 3px whitesmoke;
+        margin: 2px;
+        font-size: 120px;
+        font-family: cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+    }
+
+    .disabled {
+        pointer-events: none;
+    }
+}
