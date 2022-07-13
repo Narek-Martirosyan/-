@@ -1,5 +1,5 @@
 .tic-tac-toe {
-    width: 500px;
+    width: 462px;
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto 40px auto;
@@ -17,9 +17,27 @@
         justify-content: center;
         align-items: center;
         user-select: none;
+
+        @media screen and (max-width: 515px) {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 70px;
+            height: 70px;
+        }
     }
 
     .disabled {
         pointer-events: none;
+    }
+
+    @media screen and (max-width: 515px) {
+        width: 312px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 222px;
     }
 }

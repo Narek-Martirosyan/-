@@ -18,7 +18,6 @@ export default function checkWinner(items, setItems, sum, setSum, setOneItemClas
                 Swal.fire({
                     title: 'Winner is X',
                     confirmButtonText: 'Play Again',
-                    willClose: false
                 }).then((result) => {
                     if (result.isConfirmed) {
                         setItems([
@@ -49,7 +48,6 @@ export default function checkWinner(items, setItems, sum, setSum, setOneItemClas
                 Swal.fire({
                     title: 'Winner is O',
                     confirmButtonText: 'Play Again',
-                    willClose: false
                 }).then((result) => {
                     if (result.isConfirmed) {
                         setItems([
@@ -81,7 +79,6 @@ export default function checkWinner(items, setItems, sum, setSum, setOneItemClas
             Swal.fire({
                 title: 'No one won',
                 confirmButtonText: 'Play Again',
-                willClose: false
             }).then((result) => {
                 if (result.isConfirmed) {
                     setItems([
