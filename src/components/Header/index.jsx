@@ -5,16 +5,33 @@ import HomeIcon from '@mui/icons-material/Home';
 import ArticleIcon from '@mui/icons-material/Article';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactsIcon from '@mui/icons-material/Contacts';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
+import UndoIcon from '@mui/icons-material/Undo';
+
 
 export default function Navbar() {
+    const location = useLocation();
+    const navigate = useNavigate();
     const [navbar, setNavbar] = useState('nav navbar my-navbar');
+    const [back, setBack] = useState('go-back');
+    const goBackURLs = ['/portfolio/todo', '/portfolio/tictactoe', '/portfolio/memorygame'];
     window.addEventListener('scroll', function (e) {
         if (this.scrollY > 10) {
             setNavbar('nav navbar my-navbar box-shadow');
         } else {
             setNavbar('nav navbar my-navbar');
         }
-    })
+    });
+
+    useEffect(() => {
+        if (goBackURLs.includes(location.pathname)) {
+            setBack('go-back show')
+        } else {
+            setBack('go-back')
+        }
+    }, [location]);
 
     return (
         <div className={navbar}>
@@ -24,6 +41,12 @@ export default function Navbar() {
                 <li><NavLink to='/about'>About</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>
             </ul>
+
+            <Button
+                className={back}
+                variant="outline-primary"
+                onClick={() => navigate(-1)}
+            > <UndoIcon /></Button>
 
             <ul className='mx-auto mobile-bar'>
                 <li><NavLink to='/home'><HomeIcon /></NavLink></li>

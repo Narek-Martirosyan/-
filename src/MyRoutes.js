@@ -5,6 +5,8 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import TicTacToe from './pages/Portfolio/TicTacToe';
+import TodoApp from './pages/Portfolio/Todo-list/TodoApp';
+import MemoryGame from './pages/Portfolio/MemoryGame';
 
 export default function MyRoutes() {
     return (
@@ -15,7 +17,9 @@ export default function MyRoutes() {
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/contact' element={<Contact />} />
-                    <Route path='/portfolio/tictactoe' element={<TicTacToe />}/>
+                    <Route path='/portfolio/tictactoe' element={<TicTacToe />} />
+                    <Route path='/portfolio/todo' element={<TodoApp />} />
+                    <Route path='/portfolio/memorygame' element={<MemoryGame />} />
                 </Route>
             </Routes>
         </>

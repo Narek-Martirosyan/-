@@ -40,9 +40,19 @@ export default function TicTacToe() {
     return (
         <div className='tic-tac-toe'>
             {items.map((item, index) => {
-                return <div key={index} className={oneItemClass} onClick={(e) => {
-                    printXorO(e, item);
-                }}>{item.title}</div>
+                return (
+                    <div
+                        key={index}
+                        className={oneItemClass}
+                        onClick={(e) => { printXorO(e, item) }}>
+                        {
+                            item.title === 'X' ?
+                                <span style={{ color: 'blue' }}>{item.title}</span> :
+                                <span style={{ color: 'red' }}>{item.title}</span>
+                        }
+                    </div>
+                )
+
             })}
         </div>
     )

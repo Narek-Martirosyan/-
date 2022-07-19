@@ -78,4 +78,27 @@
             padding: 0;
         }
     }
+    .go-back {
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        display: none;
+        border: none;
+        cursor: none;
+        &::after {
+            content: 'Go back';
+        }
+        @media screen and (max-width: 640px) {
+            &::after {
+                content: '';
+            }
+            right: 10px;
+        }
+        @media screen and (max-width: 425px) {
+            right: 5px;
+        }
+    }
+    .show {
+        display: block;
+    }
 }
