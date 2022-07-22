@@ -1,0 +1,48 @@
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 616px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px blue;
+
+    @media screen and (max-width: 768px) {
+        width: 416px;
+    }
+
+    @media screen and (max-width: 440px) {
+        width: 296px;
+    }
+
+    .one-item {
+        background-size: contain;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 0 5px;
+        margin: 2px;
+        transition: .2s;
+
+        @media screen and (max-width: 768px) {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media screen and (max-width: 440px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .disable {
+        pointer-events: none;
+    }
+
+    .enable {
+        pointer-events: unset;
+    }
+
+    .disabled {
+        pointer-events: none;
+        filter: grayscale(80%) sepia(60%);
+        transition: .8s;
+    }
+}
