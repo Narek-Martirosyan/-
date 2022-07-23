@@ -74,20 +74,26 @@ export default function EditDelete({ index, list }) {
 
   return (
     <Stack direction={'row'} spacing={1}>
-      <IconButton onClick={edittodo} sx={{
-        color: 'white',
-        '&:active': {
-          color: 'red'
-        }
-      }}>
+      <IconButton
+        onClick={edittodo}
+        title='Edit'
+        sx={{
+          color: 'white',
+          '&:active': {
+            color: 'red'
+          }
+        }}>
         <EditIcon />
       </IconButton>
-      <IconButton onClick={deletetodo} sx={{
-        color: 'white',
-        '&:active': {
-          color: 'red'
-        }
-      }}>
+      <IconButton
+        onClick={deletetodo}
+        title='Delete'
+        sx={{
+          color: 'white',
+          '&:active': {
+            color: 'red'
+          }
+        }}>
         <DeleteForeverIcon />
       </IconButton>
     </Stack>

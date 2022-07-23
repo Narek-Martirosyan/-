@@ -16,7 +16,7 @@ export default function Navbar() {
     const navigate = useNavigate();
     const [navbar, setNavbar] = useState('nav navbar my-navbar');
     const [back, setBack] = useState('go-back');
-    const goBackURLs = ['/portfolio/todo', '/portfolio/tictactoe', '/portfolio/memorygame'];
+    const goBackURLs = ['/portfolio/todo', '/portfolio/tictactoe', '/portfolio/memorygame', '/articles/fixedbrokentodo'];
     window.addEventListener('scroll', function (e) {
         if (this.scrollY > 10) {
             setNavbar('nav navbar my-navbar box-shadow');
@@ -38,13 +38,14 @@ export default function Navbar() {
             <ul className='pages-block mx-auto'>
                 <li><NavLink to='/home'>Home</NavLink></li>
                 <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
-                <li><NavLink to='/about'>About</NavLink></li>
+                <li><NavLink to='/articles'>Articles</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>
             </ul>
 
             <Button
                 className={back}
                 variant="outline-primary"
+                title='Go back'
                 onClick={() => navigate(-1)}
             > <UndoIcon /></Button>
 

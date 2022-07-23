@@ -12,11 +12,13 @@ export default function Counter() {
         <div className='counter'>
             <strong>Completed {num}/{list.length}</strong>
             <div className='clear-all-completed' onClick={() => dispatch(clearCompleted())}>
-                <Button sx={{
-                    '&:active': {
-                        color: 'red'
-                    },
-                }}>
+                <Button
+                    title='Clear all completed'
+                    sx={{
+                        '&:active': {
+                            color: 'red'
+                        }
+                    }}>
                     Clear all completed
                     <ClearAllIcon />
                 </Button>

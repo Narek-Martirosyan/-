@@ -14,6 +14,7 @@ export default function SearchTodo() {
                 label="Search field"
                 type="search"
                 variant="standard"
+                title="Text field"
                 focused
                 sx={{
                     mr: 5,

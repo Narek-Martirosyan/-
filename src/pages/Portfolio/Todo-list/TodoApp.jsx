@@ -7,6 +7,8 @@ import AddTodo from '../../../components/Todos/AddTodo';
 import Counter from '../../../components/Todos/Counter';
 import SearchTodo from '../../../components/Todos/SearchTodo';
 
+localStorage.setItem('list', JSON.stringify([]));
+
 export default function TodoApp() {
     const list = useSelector(searchHandler);
 

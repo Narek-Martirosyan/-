@@ -11,7 +11,7 @@ export default function AddTodo() {
         <Box component={'form'} onSubmit={(e) => {
             e.preventDefault();
             if (e.target[0].value.trim()) {
-                dispatch(addTodo(e.target[0].value))
+                dispatch(addTodo(e.target[0].value));
             }
             e.target[0].value = '';
         }} sx={{
@@ -22,14 +22,18 @@ export default function AddTodo() {
             <TextField
                 label="Add to do"
                 variant="standard"
+                title='Text field'
                 focused
             />
-            <IconButton type='submit' sx={{
-                color: 'blue',
-                '&:active': {
-                    color: '#12830D'
-                }
-            }}>
+            <IconButton
+                type='submit'
+                title='Add'
+                sx={{
+                    color: 'blue',
+                    '&:active': {
+                        color: '#12830D'
+                    }
+                }}>
                 <AddIcon />
             </IconButton>
         </Box>

@@ -1,0 +1,35 @@
+.fixed-broken-todo {
+    &-title {
+        margin: 20px 0 20px 0;
+        border-bottom: 2px solid;
+        width: fit-content;
+    }
+
+    &-text {
+        max-width: 700px;
+        font-size: calc(.9rem + .4vw);
+    }
+
+    &-bugs {
+        font-size: calc(.9rem + .4vw);
+    }
+
+    &-examples-block {
+        font-size: 18px;
+        box-shadow: 0 0 10px black;
+        display: block;
+        text-align: start;
+        margin: 0 auto 30px auto;
+        padding: 10px 0 10px 10px;
+        background-color: #949494cb;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+
+        &-example {
+            text-align: start;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: black;
+        }
+    }
+}
