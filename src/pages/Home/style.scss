@@ -94,9 +94,11 @@
 
     .hidden-content {
         opacity: 0;
+        display: none;
     }
 
     .show-content {
+        display: block;
         opacity: 1;
         transition: 2s;
     }

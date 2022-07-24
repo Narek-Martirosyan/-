@@ -44,7 +44,6 @@ export default function FixedBrokenTodo() {
                     <br />] <br />
                     const [todos, setTodos] = React.useState(todosTemplate);
                 </pre>
-
             </code>
 
             <h2 className="fixed-broken-todo-title">Fix a layout, checkboxes should be listed in a column.</h2>

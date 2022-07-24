@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyRoutes from './MyRoutes';
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
+import ScrollToTop from './scrollToTop';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         }}
         targetOpacity={0.5}
       />
+      <ScrollToTop />
       <MyRoutes />
     </div>
   );
