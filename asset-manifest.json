@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.ac18e25d.css",
-    "main.js": "/home/static/js/main.eb5dc244.js",
+    "main.css": "/home/static/css/main.cb65be75.css",
+    "main.js": "/home/static/js/main.fe38d6c1.js",
     "static/media/memoryGame.png": "/home/static/media/memoryGame.b89b5bb749e82d1ca253.png",
     "static/media/myPic.png": "/home/static/media/myPic.0cd7988783ad02ea20fe.png",
     "static/media/7.jpg": "/home/static/media/7.2b923a58143071f7fc46.jpg",
@@ -11,11 +11,11 @@
     "static/media/background.jpg": "/home/static/media/background.e6d001feafd66723d86c.jpg",
     "static/media/1.jpg": "/home/static/media/1.6766f3f0b7325fd43bbf.jpg",
     "index.html": "/home/index.html",
-    "main.ac18e25d.css.map": "/home/static/css/main.ac18e25d.css.map",
-    "main.eb5dc244.js.map": "/home/static/js/main.eb5dc244.js.map"
+    "main.cb65be75.css.map": "/home/static/css/main.cb65be75.css.map",
+    "main.fe38d6c1.js.map": "/home/static/js/main.fe38d6c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac18e25d.css",
-    "static/js/main.eb5dc244.js"
+    "static/css/main.cb65be75.css",
+    "static/js/main.fe38d6c1.js"
   ]
 }
