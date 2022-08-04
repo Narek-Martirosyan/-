@@ -1,6 +1,6 @@
 import Swal from 'sweetalert2';
 
-export default function checkWinner(items, setItems, sum, setSum, setOneItemClass, setXorO) {
+const checkWinner = (items, setItems, sum, setSum, setOneItemClass, setXorO) => {
     const winSteps = [
         [0, 1, 2],
         [3, 4, 5],
@@ -104,3 +104,5 @@ export default function checkWinner(items, setItems, sum, setSum, setOneItemClas
         return;
     }
 }
+
+export default checkWinner

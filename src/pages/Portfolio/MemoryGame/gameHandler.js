@@ -1,7 +1,7 @@
 import bckg from './img/background.jpg';
 let counter = 0;
 
-export default function gameHandler(
+const gameHandler = (
     print,
     index,
     images,
@@ -10,7 +10,7 @@ export default function gameHandler(
     setPrint,
     openedImageContainer,
     setOpenedImageContainer
-) {
+) => {
     print[index].image = images[index].image;
     print[index].id = images[index].id;
     print[index].class = 'one-item disable';
@@ -51,3 +51,5 @@ export default function gameHandler(
         }
     }
 }
+
+export default gameHandler

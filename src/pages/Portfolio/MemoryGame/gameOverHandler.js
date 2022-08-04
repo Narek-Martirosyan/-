@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2';
 import bckg from './img/background.jpg';
 
-export default function gameOverHandler(
+const gameOverHandler = (
     openedImageContainer,
     print,
     setPlayAgain,
@@ -11,7 +11,7 @@ export default function gameOverHandler(
     images,
     setOpenedImageContainer,
     setMainBackground
-) {
+) => {
     if (openedImageContainer.length === print.length) {
         setTimeout(() => {
             Swal.fire({
@@ -55,3 +55,5 @@ export default function gameOverHandler(
         }, 500);
     }
 }
+
+export default gameOverHandler

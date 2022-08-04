@@ -1,0 +1,1 @@
+export { OneCard } from './card.jsx';

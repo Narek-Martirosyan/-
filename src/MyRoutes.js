@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
-import Main from './layoutes/Main';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Articles from './pages/Articles';
-import Contact from './pages/Contact';
-import TicTacToe from './pages/Portfolio/TicTacToe';
-import TodoApp from './pages/Portfolio/Todo-list/TodoApp';
-import MemoryGame from './pages/Portfolio/MemoryGame';
-import FixedBrokenTodo from './pages/FixedBrokenTodo';
+import { Main } from './layoutes/Main';
+import { Home } from './pages/Home';
+import { Portfolio } from './pages/Portfolio';
+import { Articles } from './pages/Articles';
+import { Contact } from './pages/Contact';
+import { TicTacToe } from './pages/Portfolio/TicTacToe';
+import { TodoApp } from './pages/Portfolio/Todo-list';
+import { MemoryGame } from './pages/Portfolio/MemoryGame';
+import { FixedBrokenTodo } from './pages/Articles/FixedBrokenTodo';
 
-export default function MyRoutes() {
+const MyRoutes = () => {
     return (
         <>
             <Routes>
@@ -27,3 +27,5 @@ export default function MyRoutes() {
         </>
     )
 }
+
+export default MyRoutes

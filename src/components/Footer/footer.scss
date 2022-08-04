@@ -1,0 +1,41 @@
+@import '../../global.scss';
+
+.footer {
+    background-color: black;
+    margin: 0 auto;
+    box-shadow: 0 -1px 5px blue;
+
+    &-my-container {
+        &-pages-block {
+            width: fit-content;
+            margin: 0 auto;
+            padding: 50px 0 10px 0;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    display: block;
+                    margin: 0 15px;
+                    cursor: none;
+
+                    &:hover {
+                        color: $grey;
+                    }
+
+                    &:active {
+                        color: blue;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 375px) {
+                display: none;
+            }
+        }
+    }
+}
