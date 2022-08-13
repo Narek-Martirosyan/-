@@ -60,7 +60,7 @@ export const Home = () => {
                                 </form>
                                 <TypeAnimationComp time={time} text={text} tag={'h2'} />
                             </> :
-                            <TypeAnimationComp time={1000} text={'Welcome to back...'} tag={'h1'} />
+                            <TypeAnimationComp time={1000} text={'Welcome back...'} tag={'h1'} />
                     }
                 </div>
             </div>
@@ -87,17 +87,16 @@ export const Home = () => {
                     'animate__animated animate__backInUp animate__slow show-content-text' :
                     'show-content-text'}
                 >
-                    Hi, I'm Narek and this is my GitHub page, like a blog or portfolio. I'm a journalist
-                    studying at YSU in the Faculty of Journalism. I'm working at the Fact Investigative
-                    Portal “FIP.am”. After that I worked at “Infocom.am” the same profesion.
-                    I'm a fact-checker, I investigate official and official people's announcements and determine
-                    whether they are right. From time to time I also do investigations and try to find
-                    out corruption schemes.
+                    Hi, I'm Narek and this is my GitHub page, something like a blog or portfolio. I'm a journalist.
+                    I study  at the Faculty of Journalism in YSU. I work at the Fact Investigative Portal “FIP.am”.
+                    Before this, I  worked in “Infocom.am” the same profession. I'm a fact-checker, I check official
+                    documents  and officials' announcements and determine whether they are right or not. From time to
+                    time I do investigations and try to find out corruption schemes.
 
                     <div className={'show-content-text-special-block'}>
-                        Over the past two years, I've had a
+                        Over the past two years...
                         <ul>
-                            <li> “WatchDog” journalism certificate of participation</li>
+                            <li> I obtained “WatchDog” journalism certificate of participation</li>
                             <li> I was awarded an incentive prize in the “Tvapatum 2020” journalism competition</li>
                             <li> I won the best article award in the "Fact-Checking Journalism Competition 2020"</li>
                             <li>
@@ -107,15 +106,15 @@ export const Home = () => {
                         </ul>
                     </div>
 
-                    I have a personal blog called “bzbzik” where I repost my articles and from time to time,
-                    how to say,“bzbzum em” :D <br /> If you want to read my articles, just
+                    I have a personal blog called “bzbzik” where I re-post my articles and from time to time,
+                    I kinda “bzbzum em” :D <br /> If you want to read my articles, just
                     <a href="https://www.bzbzik.com/" target={'_blank'} rel="noreferrer"> follow this link</a>.
                     <br /><br />
-                    I have always been interested in media literacy, media security, and coding. First, I made a
-                    decision to learn front-end development.
+                    I have always been interested in media literacy, media security, and coding. Finally I have made a
+                    decision to learn programming and I have studied front-end development.
 
                     <div className={'show-content-text-special-block'}>
-                        Over the past six months, I've learned
+                        Over the past six months, I learnt
                         <ul>
                             <li>HTML 5</li>
                             <li>CSS 3 (SCSS)</li>
@@ -127,15 +126,15 @@ export const Home = () => {
                         </ul>
                     </div>
 
-                    I know that I have more practice to improve my skills, but now I can work with these tools.
-                    This GitHub page was created using React JS because the most I liked exactly React JS framework.
+                    I know that it requires much time  to improve my skills, but now I can work with these tools.
+                    This GitHub page was created by using React JS because mostly I like React JS framework.
 
                     <div className={'show-content-text-special-block'}>
-                        I think my most stronger skills are
+                        For me, my strongest  skills are
                         <ul>
-                            <li>learn new technologies quickly</li>
-                            <li>spend a lot of time in front of the computer</li>
-                            <li>find all the information I need from Google</li>
+                            <li>learning new technologies quickly</li>
+                            <li>spending a lot of time in front of the computer</li>
+                            <li>finding all the information I need from Google</li>
                         </ul>
 
                         All I need to work well is a
@@ -146,8 +145,8 @@ export const Home = () => {
                         </ul>
                     </div>
 
-                    If you'd like to see my works, please visit the <Link to={'/portfolio'}>Portfolio page</Link>. <br />
-                    If you'd like to contact me, please visit the <Link to={'/contact'}>Contact page</Link>.
+                    If you want to see my works, please visit the <Link to={'/portfolio'}>Portfolio page</Link>. <br />
+                    If you want to contact me, please visit the <Link to={'/contact'}>Contact page</Link>.
 
                 </h5>
             </div>

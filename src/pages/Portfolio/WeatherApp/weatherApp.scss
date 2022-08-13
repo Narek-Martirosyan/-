@@ -1,0 +1,91 @@
+.weather-app {
+    margin: 10px auto 30px auto;
+    width: 50%;
+    box-shadow: 0 0 5px;
+    padding: 10px;
+
+    &-title {
+        text-align: center;
+    }
+
+    &-form {
+        margin: 0 auto;
+        width: fit-content;
+        margin-bottom: 30px;
+
+        input[type="search"] {
+            background-color: transparent;
+            border: none;
+            color: white;
+            box-shadow: 0 5px 5px -5px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            background-color: transparent;
+            border: none;
+            color: white;
+            box-shadow: 0 5px 5px -5px;
+        }
+    }
+
+    &-all {
+        &-current-weather {
+            &-temperature-block {
+                display: flex;
+                align-items: center;
+
+                &-city {
+                    margin-right: 50px;
+
+                    @media screen and (max-width: 425px) {
+                        font-size: calc(1.325rem + .9vw);
+                    }
+
+                    @media screen and (max-width: 370px) {
+                        font-size: calc(1rem + .9vw);
+                    }
+
+                    @media screen and (max-width: 328px) {
+                        font-size: calc(1rem + .4vw);
+                    }
+                }
+
+                &-description {
+                    @media screen and (max-width: 370px) {
+                        font-size: calc(1rem + .9vw);
+                    }
+
+                    @media screen and (max-width: 328px) {
+                        font-size: calc(1rem + .4vw);
+                    }
+                }
+            }
+
+            &-more-info {
+                display: flex;
+                justify-content: space-between;
+                box-shadow: 0px 15px 13px -15px;
+
+                @media screen and (max-width: 485px) {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 509px) {
+        width: 95%;
+    }
+}

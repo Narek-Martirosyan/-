@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
 .App {
     background-color: #171E27;
     color: aliceblue;
     cursor: none;
-    font-family: cursive;
+    font-family: 'Crimson Text', serif;
 }
-

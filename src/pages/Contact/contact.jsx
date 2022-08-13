@@ -68,7 +68,7 @@ export const Contact = () => {
             'contact-page'}
         >
             <div className='contact-page-contact-me'>
-                <h5 className='contact-page-contact-me-title'>Contact me at the phone number and Email below</h5>
+                <h5 className='contact-page-contact-me-title'>Contact me on the following phone number and E-mail</h5>
 
                 <div className='contact-page-contact-me-methods'>
                     <CallIcon sx={{ fontSize: '30px' }} /> <span>+374 93 044 899</span>
@@ -83,7 +83,7 @@ export const Contact = () => {
 
             <form ref={form} onSubmit={sendEmail} className="contact-page-form">
                 <h5 className='contact-page-form-description'>
-                    If you would like to send me an email, please enter the following fields and click Send.
+                    If you want to send me an email, please fill the following fields and click on "Send".
                 </h5>
 
                 <label className={name === 'Name' ? 'contact-page-form-label' : 'contact-page-form-label warning'}>

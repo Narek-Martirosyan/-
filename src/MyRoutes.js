@@ -8,6 +8,8 @@ import { TicTacToe } from './pages/Portfolio/TicTacToe';
 import { TodoApp } from './pages/Portfolio/Todo-list';
 import { MemoryGame } from './pages/Portfolio/MemoryGame';
 import { FixedBrokenTodo } from './pages/Articles/FixedBrokenTodo';
+import { EmailJS } from './pages/Articles/EmailJS';
+import { WeatherApp } from './pages/Portfolio/WeatherApp';
 
 const MyRoutes = () => {
     return (
@@ -18,10 +20,12 @@ const MyRoutes = () => {
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/articles' element={<Articles />} />
                     <Route path='/articles/fixedbrokentodo' element={<FixedBrokenTodo />} />
+                    <Route path='/articles/emailJS' element={<EmailJS />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/portfolio/tictactoe' element={<TicTacToe />} />
                     <Route path='/portfolio/todo' element={<TodoApp />} />
                     <Route path='/portfolio/memorygame' element={<MemoryGame />} />
+                    <Route path='/portfolio/weatherapp' element={<WeatherApp />} />
                 </Route>
             </Routes>
         </>
