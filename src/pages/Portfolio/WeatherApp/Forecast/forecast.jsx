@@ -6,7 +6,14 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ThermostatIcon from '@mui/icons-material/Thermostat';
 import AirIcon from '@mui/icons-material/Air';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { showTodayHandler, showOneHandler, showTwoHandler, showThreeHandler, showFourHandler, showFiveHandler } from "./logics";
+import {
+    showTodayHandler,
+    showOneHandler,
+    showTwoHandler,
+    showThreeHandler,
+    showFourHandler,
+    showFiveHandler
+} from "./logics";
 
 const currentDate = new Date().getDate();
 
@@ -92,7 +99,9 @@ export const Forecast = ({ currentCityCoord }) => {
                     {dayList.filter(day => day.day === "Today").map((item, index) => (
                         <div className="forecast-today-today-info" key={index}>
                             <h6 className="forecast-today-today-info-time"><AccessTimeIcon />{item?.time}</h6>
-                            <h6 className="forecast-today-today-info-temp"><ThermostatIcon />{kelvinToCelsius(item?.temp)}℃</h6>
+                            <h6 className="forecast-today-today-info-temp"><ThermostatIcon />
+                                {kelvinToCelsius(item?.temp)}℃
+                            </h6>
                             <h6>
                                 <img src={`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`}
                                     alt={item?.weather?.description}
@@ -124,7 +133,9 @@ export const Forecast = ({ currentCityCoord }) => {
                         return (
                             <div className="forecast-one-day-info" key={index}>
                                 <h6 className="forecast-one-day-info-time"><AccessTimeIcon />{item?.time}</h6>
-                                <h6 className="forecast-one-day-info-temp"><ThermostatIcon />{kelvinToCelsius(item?.temp)}℃</h6>
+                                <h6 className="forecast-one-day-info-temp"><ThermostatIcon />
+                                    {kelvinToCelsius(item?.temp)}℃
+                                </h6>
                                 <h6>
                                     <img src={`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`}
                                         alt={item?.weather?.description}
@@ -157,7 +168,9 @@ export const Forecast = ({ currentCityCoord }) => {
                         return (
                             <div className="forecast-two-day-info" key={index}>
                                 <h6 className="forecast-two-day-info-time"><AccessTimeIcon />{item?.time}</h6>
-                                <h6 className="forecast-two-day-info-temp"><ThermostatIcon />{kelvinToCelsius(item?.temp)}℃</h6>
+                                <h6 className="forecast-two-day-info-temp"><ThermostatIcon />
+                                    {kelvinToCelsius(item?.temp)}℃
+                                </h6>
                                 <h6>
                                     <img src={`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`}
                                         alt={item?.weather?.description}
@@ -190,7 +203,9 @@ export const Forecast = ({ currentCityCoord }) => {
                         return (
                             <div className="forecast-three-day-info" key={index}>
                                 <h6 className="forecast-three-day-info-time"><AccessTimeIcon />{item?.time}</h6>
-                                <h6 className="forecast-three-day-info-temp"><ThermostatIcon />{kelvinToCelsius(item?.temp)}℃</h6>
+                                <h6 className="forecast-three-day-info-temp"><ThermostatIcon />
+                                    {kelvinToCelsius(item?.temp)}℃
+                                </h6>
                                 <h6>
                                     <img src={`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`}
                                         alt={item?.weather?.description}
@@ -223,7 +238,9 @@ export const Forecast = ({ currentCityCoord }) => {
                         return (
                             <div className="forecast-four-day-info" key={index}>
                                 <h6 className="forecast-four-day-info-time"><AccessTimeIcon />{item?.time}</h6>
-                                <h6 className="forecast-four-day-info-temp"><ThermostatIcon />{kelvinToCelsius(item?.temp)}℃</h6>
+                                <h6 className="forecast-four-day-info-temp"><ThermostatIcon />
+                                    {kelvinToCelsius(item?.temp)}℃
+                                </h6>
                                 <h6>
                                     <img src={`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`}
                                         alt={item?.weather?.description}
@@ -256,7 +273,9 @@ export const Forecast = ({ currentCityCoord }) => {
                         return (
                             <div className="forecast-five-day-info" key={index}>
                                 <h6 className="forecast-five-day-info-time"><AccessTimeIcon />{item?.time}</h6>
-                                <h6 className="forecast-five-day-info-temp"><ThermostatIcon />{kelvinToCelsius(item?.temp)}℃</h6>
+                                <h6 className="forecast-five-day-info-temp"><ThermostatIcon />
+                                    {kelvinToCelsius(item?.temp)}℃
+                                </h6>
                                 <h6>
                                     <img src={`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`}
                                         alt={item?.weather?.description}

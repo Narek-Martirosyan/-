@@ -1,0 +1,108 @@
+.random-user-page {
+    display: flex;
+
+    &-gender {
+        margin-top: 20px;
+        cursor: none;
+        width: fit-content;
+
+        &-title {
+            margin: 0;
+            user-select: none;
+            font-size: 18px;
+
+            &:hover {
+                color: blue;
+            }
+
+            &:active {
+                color: rgb(18, 18, 160);
+            }
+
+            &-arrow {
+                transition: .4s!important;
+            }
+
+            .rotate-arrow {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-radios {
+            display: none;
+
+            label {
+                cursor: none;
+            }
+
+            input[type="radio"] {
+                margin: 0 5px;
+                cursor: none;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+            }
+        }
+
+        .show-data {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-nation {
+        margin-top: 20px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            user-select: none;
+            font-size: 18px;
+
+            &:hover {
+                color: blue;
+            }
+
+            &:active {
+                color: rgb(18, 18, 160);
+            }
+
+            &-arrow {
+                transition: .4s!important;
+            }
+
+            .rotate-arrow {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-data {
+            display: none;
+
+            label {
+                margin-right: 10px;
+                cursor: none;
+
+                input[type="checkbox"] {
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                    cursor: none;
+                }
+            }
+        }
+
+        .show-data {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        align-items: center;
+    }
+}

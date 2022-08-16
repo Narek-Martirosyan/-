@@ -1,0 +1,95 @@
+.print-random-user {
+    width: 70%;
+
+    &-one-user {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-image {
+            border-radius: 50%;
+            border: 3px solid blue;
+        }
+
+        &-name,
+        &-email,
+        &-date,
+        &-location,
+        &-phone {
+            display: none;
+            text-shadow: 0 0 20px blue;
+            transition: .4s;
+        }
+
+        .text {
+            display: none;
+        }
+
+        .active-text {
+            display: block;
+        }
+
+        .active {
+            display: block;
+            text-align: center;
+        }
+
+        &-icons {
+            width: 250px;
+            height: 60px;
+            margin-top: 20px;
+            position: relative;
+
+            .icon {
+                transition: .2s;
+                margin: 0 10px;
+                font-size: 30px;
+            }
+
+            .icon-name {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .icon-location {
+                position: absolute;
+                left: 50px;
+                top: 0;
+            }
+
+            .icon-date {
+                position: absolute;
+                left: 100px;
+                top: 0;
+            }
+
+            .icon-email {
+                position: absolute;
+                left: 150px;
+                top: 0;
+            }
+
+            .icon-phone {
+                position: absolute;
+                left: 200px;
+                top: 0;
+            }
+
+            .active-icon {
+                font-size: 50px;
+                transition: .2s;
+                position: absolute;
+                top: -20px;
+                color: blue;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        margin-top: 50px;
+        width: fit-content;
+    }
+}
