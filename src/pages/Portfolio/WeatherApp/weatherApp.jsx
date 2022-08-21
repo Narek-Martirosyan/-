@@ -10,6 +10,7 @@ import CloudIcon from '@mui/icons-material/Cloud';
 import AirIcon from '@mui/icons-material/Air';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import WbTwilightIcon from '@mui/icons-material/WbTwilight';
+import 'animate.css';
 
 export const WeatherApp = () => {
     const [city, setCity] = useState("");
@@ -41,7 +42,7 @@ export const WeatherApp = () => {
     const temperature = kelvinToCelsius(cityWeatherData?.main?.temp);
 
     return (
-        <div className="weather-app">
+        <div className="weather-app animate__animated animate__zoomIn">
             {!currentCityCoord && <h3 className="weather-app-title">Search the city for weather information</h3>}
             <form className="weather-app-form" onSubmit={(e) => onSubmitHandler(e, e.target[0].value)}>
                 <input type="search" placeholder="Please enter city" />

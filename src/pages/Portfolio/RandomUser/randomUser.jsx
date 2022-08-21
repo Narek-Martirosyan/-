@@ -8,6 +8,7 @@ import { showDataHandler } from './functions';
 import { showGenderDataHandler } from './functions';
 import { onChangeHandler } from './functions';
 import { PrintRandomUsers } from './PrintRandomUsers';
+import 'animate.css';
 
 export const RandomUser = () => {
     const [showData, setShowData] = useState(true);
@@ -28,7 +29,7 @@ export const RandomUser = () => {
     }
 
     return (
-        <div className='random-user-page'>
+        <div className='random-user-page animate__animated animate__zoomIn'>
             <form
                 onSubmit={(e) => randomUserHandler(e)}
                 onChange={(e) => onChangeHandler(e, data, setData)}

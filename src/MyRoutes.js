@@ -11,6 +11,7 @@ import { FixedBrokenTodo } from './pages/Articles/FixedBrokenTodo';
 import { EmailJS } from './pages/Articles/EmailJS';
 import { WeatherApp } from './pages/Portfolio/WeatherApp';
 import { RandomUser } from './pages/Portfolio/RandomUser';
+import { RandomAdvice } from './pages/Portfolio/RandomAdvice';
 
 const MyRoutes = () => {
     return (
@@ -28,6 +29,7 @@ const MyRoutes = () => {
                     <Route path='/portfolio/memorygame' element={<MemoryGame />} />
                     <Route path='/portfolio/weatherapp' element={<WeatherApp />} />
                     <Route path='/portfolio/randomuser' element={<RandomUser />} />
+                    <Route path='/portfolio/randomadvice' element={<RandomAdvice />} />
                 </Route>
             </Routes>
         </>

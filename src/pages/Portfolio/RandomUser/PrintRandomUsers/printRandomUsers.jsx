@@ -53,7 +53,6 @@ export const PrintRandomUsers = ({ userData }) => {
         setPhone("print-random-user-one-user-phone active");
     }
 
-    console.log(userData);
     return (
         <div className="print-random-user">
             {userData.map(user => {

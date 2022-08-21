@@ -4,6 +4,7 @@ import todo from './img/todo.png';
 import memoryGame from './img/memoryGame.png';
 import weatherApp from './img/weatherApp.png';
 import randomUser from './img/randomUser.png';
+import randomAdvice from './img/randomAdvice.png';
 import './portfolio.scss';
 import 'animate.css';
 import { useSelector } from 'react-redux';
@@ -47,6 +48,12 @@ export const Portfolio = () => {
                     title={'Random user generator'}
                     text={'This app generate over 5000 random users'}
                     url={'/portfolio/randomuser'}
+                />
+                <Card
+                    img={randomAdvice}
+                    title={'Random advice generator'}
+                    text={'This app generate random advices with random images'}
+                    url={'/portfolio/randomadvice'}
                 />
             </div>
         </div>
