@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.4501774c.css",
-    "main.js": "/home/static/js/main.0c7d19e9.js",
+    "main.css": "/home/static/css/main.6b1c23f2.css",
+    "main.js": "/home/static/js/main.1a5fb9cc.js",
+    "static/media/randomAdvice.png": "/home/static/media/randomAdvice.5e3814bddd105e57344b.png",
     "static/media/memoryGame.png": "/home/static/media/memoryGame.b89b5bb749e82d1ca253.png",
     "static/media/myPic.png": "/home/static/media/myPic.0cd7988783ad02ea20fe.png",
     "static/media/randomUser.png": "/home/static/media/randomUser.9ca751093fc82227bd20.png",
@@ -13,11 +14,11 @@
     "static/media/background.jpg": "/home/static/media/background.e6d001feafd66723d86c.jpg",
     "static/media/1.jpg": "/home/static/media/1.6766f3f0b7325fd43bbf.jpg",
     "index.html": "/home/index.html",
-    "main.4501774c.css.map": "/home/static/css/main.4501774c.css.map",
-    "main.0c7d19e9.js.map": "/home/static/js/main.0c7d19e9.js.map"
+    "main.6b1c23f2.css.map": "/home/static/css/main.6b1c23f2.css.map",
+    "main.1a5fb9cc.js.map": "/home/static/js/main.1a5fb9cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.4501774c.css",
-    "static/js/main.0c7d19e9.js"
+    "static/css/main.6b1c23f2.css",
+    "static/js/main.1a5fb9cc.js"
   ]
 }
