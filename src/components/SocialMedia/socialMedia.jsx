@@ -42,7 +42,7 @@ export const SocialMedia = ({fontsize, boostClass}) => {
 
             <IconButton sx={{ cursor: 'none!important', '&:active': { backgroundColor: '#9b9b9b' } }}>
                 <a style={{ cursor: 'none', display: 'inherit' }}
-                    href="https://www.linkedin.com/in/narek-martirosyan-journalist/"
+                    href="https://www.linkedin.com/in/narekmartiros/"
                     target={'_blank'}
                     rel='noreferrer'
                 >

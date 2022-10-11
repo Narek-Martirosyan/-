@@ -2,6 +2,7 @@ import './randomAdvice.scss';
 import { useState } from "react";
 import { randomAdvice } from "../../../axios/RandomAdviceAPI"
 import { useEffect } from 'react';
+import 'animate.css';
 
 export const RandomAdvice = () => {
     const [data, setData] = useState([]);
@@ -20,10 +21,10 @@ export const RandomAdvice = () => {
 
     return (
         <>
-            <div className="random-background"
+            <div className="random-background animate__animated animate__zoomIn"
                 style={{ backgroundImage: `url("https://picsum.photos/700/500?random-${randomNum}")` }}>
             </div>
-            <div className='random-advice'>
+            <div className='random-advice animate__animated animate__zoomIn'>
                 <h4>{data.advice}</h4>
                 <div className='button-advice'>
                     <button onClick={randomAdviceHandler}>Give me advice</button>
