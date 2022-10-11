@@ -1,10 +1,13 @@
 import { OneCard as Card } from '../../components/Card';
+import { WebsiteCard } from '../../components/WebsiteCard';
 import tictactoe from './img/tictactoe.png';
 import todo from './img/todo.png';
 import memoryGame from './img/memoryGame.png';
 import weatherApp from './img/weatherApp.png';
 import randomUser from './img/randomUser.png';
 import randomAdvice from './img/randomAdvice.png';
+import ledress from "./img/ledress.png";
+import luigis from "./img/luigiis.png";
 import './portfolio.scss';
 import 'animate.css';
 import { useSelector } from 'react-redux';
@@ -15,10 +18,32 @@ export const Portfolio = () => {
     const currentPathname = useSelector(followPortfolioPathname);
 
     return (
-        <div>
+        <>
             <div className={currentPathname?.length <= 1 ?
-                "row d-flex mx-auto portfolio animate__animated animate__backInDown" :
-                "row d-flex mx-auto portfolio"}>
+                'row d-flex mx-auto portfolio animate__animated animate__backInDown mt-5' :
+                "row d-flex mx-auto portfolio"}
+            >
+                <h1 className='text-center'>Websites</h1>
+                <WebsiteCard
+                    img={ledress}
+                    title={"Ledress | online shopping website"}
+                    text={"Tools: HTML, SCSS, Bootstrap, JavaScript, React JS, RESTfulAPI, Redux "}
+                    url={"https://narek-martirosyan.github.io/ledress/"}
+                />
+                <WebsiteCard
+                    img={luigis}
+                    title={"Luigis | online pizzeria"}
+                    text={"Tools: HTML, SCSS, Bootstrap, JavaScript, React JS, RESTfulAPI, Redux "}
+                    url={"https://narek-martirosyan.github.io/luigis/"}
+                />
+
+            </div>
+
+            <div className={currentPathname?.length <= 1 ?
+                "row d-flex mx-auto portfolio animate__animated animate__backInDown mt-5" :
+                "row d-flex mx-auto portfolio mt-5"}
+            >
+                <h1 className='text-center'>Applications and games</h1>
                 <Card
                     img={tictactoe}
                     title={'Tic Tac Toe'}
@@ -56,6 +81,6 @@ export const Portfolio = () => {
                     url={'/portfolio/randomadvice'}
                 />
             </div>
-        </div>
+        </>
     )
 }
