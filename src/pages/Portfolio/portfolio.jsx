@@ -6,6 +6,7 @@ import memoryGame from './img/memoryGame.png';
 import weatherApp from './img/weatherApp.png';
 import randomUser from './img/randomUser.png';
 import randomAdvice from './img/randomAdvice.png';
+import morse from "./img/morse.png";
 import ledress from "./img/ledress.png";
 import luigis from "./img/luigiis.png";
 import './portfolio.scss';
@@ -44,6 +45,12 @@ export const Portfolio = () => {
                 "row d-flex mx-auto portfolio mt-5"}
             >
                 <h1 className='text-center'>Applications and games</h1>
+                <Card
+                    img={morse}
+                    title={'English to Morse'}
+                    text={'English - Morse code translator: Learn and Enjoy:)'}
+                    url={'/portfolio/morse'}
+                />
                 <Card
                     img={tictactoe}
                     title={'Tic Tac Toe'}
