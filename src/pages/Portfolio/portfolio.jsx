@@ -7,6 +7,7 @@ import weatherApp from './img/weatherApp.png';
 import randomUser from './img/randomUser.png';
 import randomAdvice from './img/randomAdvice.png';
 import morse from "./img/morse.png";
+import binarySearch from "./img/binarySearch.png";
 import ledress from "./img/ledress.png";
 import luigis from "./img/luigiis.png";
 import megaStore from "./img/megaStore.jpg"
@@ -52,6 +53,13 @@ export const Portfolio = () => {
                 "row d-flex mx-auto portfolio mt-5"}
             >
                 <h1 className='text-center'>Applications and games</h1>
+                <Card
+                    img={binarySearch}
+                    title={'Binary Search'}
+                    text={'Game about linear and binary search algorithms'}
+                    url={'https://narek-martirosyan.github.io/binarySearchGame/'}
+                    outOf={true}
+                />
                 <Card
                     img={morse}
                     title={'English to Morse'}

@@ -3,14 +3,14 @@ import Card from 'react-bootstrap/Card';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { useNavigate } from 'react-router-dom';
 
-export function OneCard({ img, title, text, url }) {
+export function OneCard({ img, title, text, url, outOf }) {
     const navigate = useNavigate();
     return (
         <Card
             bg='dark'
             style={{ width: '18rem', boxShadow: '0 0 10px blue' }}
             className='p-2 my-3 mx-3'
-            onClick={() => navigate(url)}
+            onClick={() => outOf ? window.open(url, "_blank") : navigate(url)}
         >
             <Card.Img
                 variant="top"
