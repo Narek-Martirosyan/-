@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.a4166d04.css",
-    "main.js": "/home/static/js/main.eecb29a7.js",
+    "main.css": "/home/static/css/main.19ff78fe.css",
+    "main.js": "/home/static/js/main.496bac3a.js",
     "static/media/luigiis.png": "/home/static/media/luigiis.512f0b620d5188073ca0.png",
     "static/media/ledress.png": "/home/static/media/ledress.d1b27288c15e3327c2d7.png",
     "static/media/randomAdvice.png": "/home/static/media/randomAdvice.5e3814bddd105e57344b.png",
@@ -11,16 +11,17 @@
     "static/media/7.jpg": "/home/static/media/7.2b923a58143071f7fc46.jpg",
     "static/media/tictactoe.png": "/home/static/media/tictactoe.f0fec3f3b3212fccf06f.png",
     "static/media/3.jpg": "/home/static/media/3.22c7e37ae1f7b2ccdb85.jpg",
+    "static/media/megaStore.jpg": "/home/static/media/megaStore.197164bc247ff26861fa.jpg",
     "static/media/weatherApp.png": "/home/static/media/weatherApp.5cda5d1089df23a13ba6.png",
     "static/media/8.jpg": "/home/static/media/8.0ce3755ee0f1aa19fd7d.jpg",
     "static/media/background.jpg": "/home/static/media/background.e6d001feafd66723d86c.jpg",
     "static/media/1.jpg": "/home/static/media/1.6766f3f0b7325fd43bbf.jpg",
     "index.html": "/home/index.html",
-    "main.a4166d04.css.map": "/home/static/css/main.a4166d04.css.map",
-    "main.eecb29a7.js.map": "/home/static/js/main.eecb29a7.js.map"
+    "main.19ff78fe.css.map": "/home/static/css/main.19ff78fe.css.map",
+    "main.496bac3a.js.map": "/home/static/js/main.496bac3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4166d04.css",
-    "static/js/main.eecb29a7.js"
+    "static/css/main.19ff78fe.css",
+    "static/js/main.496bac3a.js"
   ]
 }
