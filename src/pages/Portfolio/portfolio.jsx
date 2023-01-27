@@ -9,6 +9,7 @@ import randomAdvice from './img/randomAdvice.png';
 import morse from "./img/morse.png";
 import ledress from "./img/ledress.png";
 import luigis from "./img/luigiis.png";
+import megaStore from "./img/megaStore.jpg"
 import './portfolio.scss';
 import 'animate.css';
 import { useSelector } from 'react-redux';
@@ -25,6 +26,12 @@ export const Portfolio = () => {
                 "row d-flex mx-auto portfolio"}
             >
                 <h1 className='text-center'>Websites</h1>
+                <WebsiteCard
+                    img={megaStore}
+                    title={"The Mega Store | Մեգա Խանութ"}
+                    text={"Tools: HTML, SCSS, Bootstrap, JavaScript, React JS, RESTfulAPI, Redux "}
+                    url={"https://narek-martirosyan.github.io/megaStore/"}
+                />
                 <WebsiteCard
                     img={ledress}
                     title={"Ledress | online shopping website"}
